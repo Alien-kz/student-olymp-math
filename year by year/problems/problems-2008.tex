@@ -1,0 +1,93 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtext}
+
+\usepackage{comment}
+\usepackage{geometry}
+\geometry{left=1cm, right=1cm, top=2cm, bottom=2cm}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\usepackage{wrapfig}
+\usepackage{fancybox,fancyhdr}
+\sloppy
+
+
+\newcommand{\head}[2]
+{
+	\fancyhf{}
+	\pagestyle{fancy}
+	\chead{Казахстанский филиал МГУ имени М.В.Ломоносова}
+
+	\begin{center}
+	\begin{LARGE}
+	#1
+	\end{LARGE}
+	\end{center}
+
+	\begin{center}
+	\begin{large}
+	#2
+	\end{large}
+	\end{center}
+
+	\textit{
+	\begin{flushright}
+	Время работы:  180 минут\\
+	Каждая задача оценивается в 10 баллов.\\
+	\end{flushright}
+	}
+
+}
+
+
+\renewcommand\thesubsubsection{}
+\renewcommand\thesubsection{}
+\renewcommand\thesection{}
+\usepackage[indentfirst, explicit]{titlesec}
+\titleformat{\section}{\Large\bfseries\center}{}{1em}{#1}
+\titleformat{\subsection}{\Large\bfseries\center}{}{1em}{#1}
+\titleformat{\subsubsection}{\normalsize\bfseries\center}{}{1em}{#1}
+
+\begin{document}
+
+\head{Открытая олимпиада по математике}{7 декабря 2008}
+
+\begin{enumerate}
+\item Функция $f(x)$ имеет непрерывную вторую производную, причем $f^{''}(x)>0$ при $x \in [0, 2\pi]$. Докажите, что  
+$$ \int\limits_0^{2\pi} f(x)\cos x\,dx > 0. $$
+
+\item Пусть $A$ --- конечное множество действительных чисел. Определите мощность множества определённых на $[0,1]$ и непрерывных на этом отрезке функций, принимающих на множестве рациональных чисел значения из множества $A$.
+
+\item Бой подушками на бревне проводится на вылет. Всем участникам присваиваются порядковые номера. Очередность боев определяется по возрастанию номеров: первый бьётся со вторым, победитель этой пары --- с третьим, следующий победитель --- с четвёртым и т.д. В другой день эти же бойцы решили повторить матч по тем же правилам, но очерёдность боев установили по убыванию номеров. Докажите, что найдётся пара бойцов, встречавшаяся друг против друга на бревне дважды.
+
+\item Найти все дифференцируемые $(n+1)$ раз на числовой прямой функции, для которых при любом вещественном $x$ выполняется соотношение
+$$
+f(x)=f(0)+\frac{x}{1!}\,f'(0)+\frac{x^2}{2!}\,f''(0)+\cdots$$
+$$\cdots + \frac{x^n}{n!}\,f^{(n)}(0)+\frac{x^{n+1}}{(n+1)!}\,f^{(n+1)}(x).
+$$
+
+\item Функция $f$: $\mathbb{R} \rightarrow (-\infty, +\infty)$ всюду непрерывна. Известно, что
+$$ \int\limits_{-\infty}^{+\infty} f(x)\,dx = 1. $$
+Пусть $\alpha$ --- произвольное вещественное число из интервала $(0, 1)$, а $[a, b]$ --- отрезок минимальной длины, для которого
+$$\int\limits_{a}^{b} f(x)\,dx = \alpha.$$ Докажите, что $f(a) = f(b)$.
+
+\item Пусть $\{a_1, a_2, \hdots, a_n\}$ --- множество натуральных чисел такое, что $\prod\limits_{i=1}^n a_i$ имеет менее $n$ различных простых делителей. Докажите, что существует непустое подмножество $I$ множества $\{1, 2, \hdots, n\}$ такое, что $\sqrt{\prod\limits_{i \in I} a_i}$ --- целое число.
+
+\item Обозначим $k$-е по счету простое число через $p_k$. Докажите, что для любого $n \geqslant 2$ множество $\{1, 2, \hdots, n\}$ можно разбить на 2 таких подмножества $A$ и $B$, что
+$$1 \leqslant \frac{ \prod\limits_{i \in A}{p_i} }{ \prod\limits_{j \in B}{p_j} } \leqslant 2.$$
+
+\item Построить функцию $f(x)$, всюду разрывную, кроме $0$, но дифференцируемую в нуле, причем $f'(0)=1$.
+
+\item Можно ли произвольную функцию $f: \mathbb{R} \rightarrow \mathbb{R}$ разложить в сумму сюръективной функции $g: \mathbb{R} \rightarrow \mathbb{R}$ и инъективной функции $h: \mathbb{R} \rightarrow \mathbb{R}$?
+
+\end{enumerate}
+
+\end{document} 

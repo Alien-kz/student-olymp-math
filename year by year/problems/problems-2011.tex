@@ -1,0 +1,100 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtext}
+
+\usepackage{comment}
+\usepackage{geometry}
+\geometry{left=1cm, right=1cm, top=2cm, bottom=2cm}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\usepackage{wrapfig}
+\usepackage{fancybox,fancyhdr}
+\sloppy
+
+
+\newcommand{\head}[2]
+{
+	\fancyhf{}
+	\pagestyle{fancy}
+	\chead{Казахстанский филиал МГУ имени М.В.Ломоносова}
+
+	\begin{center}
+	\begin{LARGE}
+	#1
+	\end{LARGE}
+	\end{center}
+
+	\begin{center}
+	\begin{large}
+	#2
+	\end{large}
+	\end{center}
+
+	\textit{
+	\begin{flushright}
+	Время работы:  180 минут\\
+	Каждая задача оценивается в 10 баллов.\\
+	\end{flushright}
+	}
+
+}
+
+
+\renewcommand\thesubsubsection{}
+\renewcommand\thesubsection{}
+\renewcommand\thesection{}
+\usepackage[indentfirst, explicit]{titlesec}
+\titleformat{\section}{\Large\bfseries\center}{}{1em}{#1}
+\titleformat{\subsection}{\Large\bfseries\center}{}{1em}{#1}
+\titleformat{\subsubsection}{\normalsize\bfseries\center}{}{1em}{#1}
+
+\begin{document}
+
+\head{Открытая олимпиада по математике}{10 декабря 2011}
+
+\begin{enumerate}
+\item Назовем конечное числовое множество своеобразным, если оно содержит число, равное количеству его элементов, но никакое его собственное подмножество этим свойством не обладает. Определите количество своеобразных подмножеств множества $\{1,\;2,\;\dots,\;12\}$.
+
+\item Определите множество значений функции, сопоставляющей каждому прямоугольному треугольнику отношение~$\displaystyle\frac{h}{r}$, где $h$ --- высота, проведенная к гипотенузе, а $r$~---~радиус вписанной в треугольник окружности.
+
+\item Две последовательности $\{x_n\}_{n=0}^{\infty}$ и $\{y_n\}_{n=0}^\infty$ удовлетворяют условиям:
+$$
+\begin{cases}
+x_{n+1}=2x_n-\alpha y_n,\\
+y_{n+1}=2y_n-\displaystyle\frac{1}{\alpha} x_n
+\end{cases}
+$$
+при всех $n\geqslant 0$, где $\alpha\not=0$ --- постоянная величина, а $x_0=1$ и $y_0=0$. Найдите $x_{2012}$ и $y_{2012}$.
+
+\item Существует ли такая последовательность вещественных чисел $\{x_n\}_{n=1}^{\infty}$, что для неё справедливы соотношения: \begin{equation*}
+\left\{
+\begin{aligned}
+\lim\limits_{k\to\infty}x_{12k} = 20,\\
+\lim\limits_{k\to\infty}x_{20k} = 12?\\
+\end{aligned}
+\right.
+\end{equation*}
+
+\item Найдите $\displaystyle\int\limits_{0}^{\pi/2}\left(\sin^2(\sin^2x)+\cos^2(\cos^2x)\right)\,dx$.
+
+\item Найдите $\displaystyle\sum\limits_{n=0}^{\infty}\frac{n+2}{n!+(n+1)!+(n+2)!}$.
+
+\item Найдите все функции $f\colon[0,\;1]\to \mathbb R$, удовлетворяющие неравенству $(x-y)^2\leqslant |f(x)-f(y)|\leqslant|x-y|$ для любых $x, y\in[0,\;1]$.
+
+\item Пусть $x_1,\;x_2,\;\dots,\;x_n,\;\dots$ --- все положительные корни уравнения $\mathrm{tg}\,x=x$, выписанные в порядке возрастания, $n_1,\;n_2,\;\dots,\;n_k,\;\dots$ --- некоторая возрастающая последовательность натуральных чисел. Докажите, что ряды $\displaystyle\sum\limits_{k=1}^{\infty} |\cos x_{n_k}|$ и $\displaystyle\sum\limits_{k=1}^{\infty}\frac{1}{n_k}$ сходятся или расходятся одновременно.
+
+\item Квадратная матрица $A$ порядка $n$ состоит из чисел $+1$ и $-1$. При этом, в каждой строке и в каждом столбце этой матрицы находится ровно одно число $-1$. Найдите $|\det A|$.
+
+\item Пусть $S$ --- сумма всех обратимых элементов конечного ассоциативного кольца с единицей. Докажите, что $S^2=0$ или $S^2=S$.
+\end{enumerate}
+
+
+\end{document} 

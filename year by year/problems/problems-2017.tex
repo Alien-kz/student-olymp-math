@@ -1,0 +1,108 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtext}
+
+\usepackage{comment}
+\usepackage{geometry}
+\geometry{left=1cm, right=1cm, top=2cm, bottom=2cm}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\usepackage{wrapfig}
+\usepackage{fancybox,fancyhdr}
+\sloppy
+
+
+\newcommand{\head}[2]
+{
+	\fancyhf{}
+	\pagestyle{fancy}
+	\chead{Казахстанский филиал МГУ имени М.В.Ломоносова}
+
+	\begin{center}
+	\begin{LARGE}
+	#1
+	\end{LARGE}
+	\end{center}
+
+	\begin{center}
+	\begin{large}
+	#2
+	\end{large}
+	\end{center}
+
+	\textit{
+	\begin{flushright}
+	Время работы:  180 минут\\
+	Каждая задача оценивается в 10 баллов.\\
+	\end{flushright}
+	}
+
+}
+
+
+\renewcommand\thesubsubsection{}
+\renewcommand\thesubsection{}
+\renewcommand\thesection{}
+\usepackage[indentfirst, explicit]{titlesec}
+\titleformat{\section}{\Large\bfseries\center}{}{1em}{#1}
+\titleformat{\subsection}{\Large\bfseries\center}{}{1em}{#1}
+\titleformat{\subsubsection}{\normalsize\bfseries\center}{}{1em}{#1}
+
+\begin{document}
+
+\head{Открытая олимпиада по математике}{19 декабря 2017}
+
+\begin{enumerate}
+\item Привести пример вещественной матрицы $A$ такой, что $A^4 = I$, но при этом $A^2 \neq \pm I$, где $I$ --- единичная матрица.
+
+\item Существует ли такая расходящаяся числовая последовательность $\{x_n\}$, что при любом натуральном $k > 1$ её подпоследовательность $\{x_{kn}\}$ сходится?
+
+\item Вычислите
+$$
+\int\limits_{-1}^{1} \frac{x^{2k} + 2017}{2018^x + 1} \;dx ,
+$$
+где $k\in\mathbb Z$.
+
+\item Найдите все непрерывные функции $f: \mathbb{R} \to \mathbb{R}$ такие, что 
+$$f(x) + f\left(3 - \frac{9}{x}\right) = x - \frac{9}{x}$$
+для всех $x\in\mathbb R\setminus\{0, 3\}.$
+
+\item К параболе проведены две касательные $l_a$ и $l_b$ в точках $A$ и $B$. Точка $C$ симметрична точке $A$ относительно $l_b$, а точка $D$ симметрична точке $B$ относительно $l_a$. Докажите, что точки $A$, $B$, $C$ и $D$ образуют ромб тогда и только тогда, когда $AB$ проходит через фокус параболы.
+
+\textit{Можно использовать оптическое свойство параболы без доказательства.}
+
+\item Найдите все такие натуральные $n$, при которых 
+$$C_{n}^0 \cdot C_{n}^1 \cdot \hdots \cdot C_n^n$$
+является точным квадратом.
+
+\textit{Здесь $C_n^k = \dfrac{n!}{k!(n-k)!}$ --- биномиальный коэффициент.}
+
+\item Докажите сходимость последовательности $\{a_n\}$, где 
+$$
+\begin{cases}
+a_1 = 1,\\
+a_{n+1} = a_n + \sin{a_n},\\
+\end{cases}
+$$
+и найдите её предел.
+
+\item Функция $F(n, k)$, определённая для всех целых неотрицательных $n$ и $k$, удовлетворяет условиям
+$$
+\begin{cases}
+F(n, k) = F(n - 1, k) + F(n, k - 1), & n \geqslant 1, k \geqslant 1,\\
+F(n, 0) = 1,  & n \geqslant 0,\\
+F(0, k) = 2 F(0, k - 1) + 1, & k \geqslant 1.
+\end{cases}
+$$
+Вычислите $F(n, n)$.
+\end{enumerate}
+
+\end{document} 

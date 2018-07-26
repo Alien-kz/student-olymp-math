@@ -1,0 +1,111 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtext}
+\usepackage{comment}
+\usepackage{graphicx}
+
+\usepackage{tikz}
+\usepackage{geometry}
+\geometry{left=1cm, right=1cm, top=2cm, bottom=2cm}
+\sloppy
+\usepackage{wrapfig}
+\graphicspath{{../../}}
+\usepackage{fancybox,fancyhdr}
+
+\newcommand{\head}[2]
+{
+	\fancyhf{}
+	\pagestyle{fancy}
+	\chead{Казахстанский филиал МГУ имени М.В.Ломоносова}
+
+	\begin{center}
+	\begin{LARGE}
+	#1
+	\end{LARGE}
+	\end{center}
+
+	\begin{center}
+	\begin{large}
+	#2
+	\end{large}
+	\end{center}
+
+	\begin{center}
+	\begin{LARGE}
+	Указания
+	\end{LARGE}
+	\end{center}
+}
+
+\begin{document}
+
+\head{Открытая олимпиада по математике}{19 декабря 2017}
+
+\begin{enumerate}
+\item Пример
+$$
+\begin{pmatrix}
+1 & 0  & 0 \\
+0 &  0 & 1 \\
+0 & -1 & 0 \\
+\end{pmatrix}
+$$
+
+\item Пример
+$$
+x_n = 
+\begin{cases}
+1, & n \text{ --- простое},\\
+0, & n \text{ --- непростое}.\\ 
+\end{cases}
+$$
+
+\item Обозначим интеграл
+$$
+I = \int\limits_{-1}^{1} \frac{x^{2k} + 2017}{2018^x + 1} \;dx ,
+$$
+и сделаем замену $t = -x$.
+$$
+I = \int\limits_{-1}^{1} \frac{t^{2k} + 2017}{2018^t + 1} \cdot 2018^t \;dt ,
+$$
+После сложения данных интегралов 
+$$2I = \int\limits_{-1}^{1} (x^{2k} + 2017) \;dx = \frac{2}{2k+1} + 2 \cdot 2017.$$
+
+\item Заметим, что для функции $g(x) = 3 - \frac{9}{x}$ верно, что $g(g(g(x))) = x$. Откуда получаем систему из трех неизвестных:
+$$
+\begin{cases}
+f(x) + f\left(3 - \frac{9}{x}\right) = x - \frac{9}{x} \\
+f\left(3 - \frac{9}{x}\right) + f\left(-\frac{9}{x - 3}\right) = 3 - \frac{9}{x} - \frac{9}{3 - \frac{9}{x}} \\
+f\left(-\frac{9}{x - 3}\right) + f\left(x\right) = -\frac{9}{x - 3} - \frac{9}{-\frac{9}{x - 3}}
+\end{cases}
+$$
+для всех $x \neq 0$, $x \neq 3$. Откуда находим решение $f(x) = x - \frac32$ для всех $x \neq 0$, $x \neq 3$. С учетом непрерывности, получаем, что функция доопределяется на всех числовой прямой в таком же виде.
+
+\item Достаточно использовать 2 факта: 
+
+1) все лучи исходящие из фокуса параболы после отражения идут параллельно оси симметрии параболы; 
+
+2) биссектрисы внутренних односторонних углов при параллельных прямых перпендикулярны.
+
+\item Все нечетные $n$ подходят. Для этого достаточно вспомнить, что биномиальные коффициенты обладают свойством симметрии $C_{n}^k = C_{n}^{n-k}$. В случае четного $n$, согласно постулату Бертрана среди чисел от $n/2$ до $n$ существует простое. Причем степень данного простого числа будет нечетна, чего не может быть.
+
+\item Замена $b_n = \pi - a_n$ дает последовательность: 
+$$
+\begin{cases}
+b_0 = \pi - 1,\\
+b_{n+1} = b_n - \sin{b_n}.\\
+\end{cases}. 
+$$
+Правая часть $b_n - \sin{b_n}$ положительна и ограничена на $(0; \pi - 1)$. Несложно показать, что последовательность будет убывающей. Следовательно, она сходится. Предел легко найти из предельного перехода: $b = \pi n$. Так как предел должен лежать в $[0; \pi - 1]$, то это 0. Ответ: $\pi$.
+
+\item Заметим, что $f(n, k) + f(k, n) = 2^{n + k + 1}$. Это можно доказать по индукции. Ответ: $f(n, n) = 4^n$.
+\end{enumerate}
+
+
+\end{document}

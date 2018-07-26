@@ -3,17 +3,17 @@
 math
 |- math.tex (сборник)
 |
-|- problems (данные)
+|- problem (данные)
 |  |- 2008.tex
 |  |- 2009.tex
 |  |- ...
 |
-|- solutions (данные)
+|- solution (данные)
 |  |- 2008-sol.tex
 |  |- 2009-sol.tex
 |  |- ...
 |
-|- results (данные)
+|- result (данные)
 |  |- 2008-res.tex
 |  |- 2009-res.tex
 |  |- ...
@@ -21,49 +21,46 @@ math
 |- year by year (по годам)
 |  |- generate.sh (скрипт, генерирующий обертку для каждого года)
 |  |
-|  |- problems 
+|  |- problem 
 |  |  |- template.tex (обертка для условий с input)
-|  |  |- problems-2020.tex
-|  |  |- problems-2020.pdf
 |  |  |- ...
 |  |
-|  |- solutions
+|  |- solution
 |  |  |- template.tex (обертка для решений с input)
-|  |  |- solutions-2020.tex
-|  |  |- solutions-2020.pdf
 |  |  |- ...
 |  |
-|  |- results
+|  |- result
 |  |  |- template.tex  (обертка для результатов input)
-|  |  |- results-2020.tex
-|  |  |- results-2020.pdf
 |  |  |- ...
 
 ============================
 
 Как добавлять новую олимпиаду:
-- math/problems/2020.tex - условия
-- math/solutions/2020.tex - решения
-- math/results/2020.tex - результаты
+- math/problem/2020.tex - условия
+- math/solution/2020.tex - решения
+- math/result/2020.tex - результаты
 - math/math.tex
    добавить строки
 	\header{2020--2021}{20 декабря 2020}
-	\input{problems/2020}
+	\input{result/2020}
 	\newpage
 	\header{2020--2021}{20 декабря 2020}
-	\input{solutions/2020-sol.tex}
+	\input{result/2020-sol.tex}
 	\newpage
 	\header{2020--2021}{20 декабря 2020}
-	\input{results/2020-res.tex}
+	\input{result/2020-res.tex}
 	\newpage
-- math/year by year/generate.py
+- math/year by year/generate.sh
     добавить строки
-    	olymp["2020"] = "20 декабря 2020", math_open;
+    	date=( "${date[@]}" "20 декабря 2020" )
+	file=( "${file[@]}" "2020" )
+	type=( "${type[@]}" "Открытая олимпиада по математике" )
 
 ============================
 
 Выполнить:
-1) cd math
-2) pdflatex math.tex
-3) cd /year\ by\ year
-4) python3 generate.py
+1) cd math/year by year && bash generate-problems.tex
+2) cd math/year by year && bash generate-solutions.tex
+3) cd math/year by year && bash generate-results.tex
+4) cd math && pdflatex math.tex
+

@@ -1,0 +1,106 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtext}
+
+\usepackage{comment}
+\usepackage{geometry}
+\geometry{left=1cm, right=1cm, top=2cm, bottom=2cm}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\usepackage{wrapfig}
+\usepackage{fancybox,fancyhdr}
+\sloppy
+
+
+\newcommand{\head}[2]
+{
+	\fancyhf{}
+	\pagestyle{fancy}
+	\chead{Казахстанский филиал МГУ имени М.В.Ломоносова}
+
+	\begin{center}
+	\begin{LARGE}
+	#1
+	\end{LARGE}
+	\end{center}
+
+	\begin{center}
+	\begin{large}
+	#2
+	\end{large}
+	\end{center}
+
+	\textit{
+	\begin{flushright}
+	Время работы:  180 минут\\
+	Каждая задача оценивается в 10 баллов.\\
+	\end{flushright}
+	}
+
+}
+
+
+\renewcommand\thesubsubsection{}
+\renewcommand\thesubsection{}
+\renewcommand\thesection{}
+\usepackage[indentfirst, explicit]{titlesec}
+\titleformat{\section}{\Large\bfseries\center}{}{1em}{#1}
+\titleformat{\subsection}{\Large\bfseries\center}{}{1em}{#1}
+\titleformat{\subsubsection}{\normalsize\bfseries\center}{}{1em}{#1}
+
+\begin{document}
+
+\head{Отборочная олимпиада по математике}{15 марта 2014}
+
+\begin{enumerate}
+
+\item Вычислить произведение двух чисел с помощью операций сложения, вычитания, возведения в квадрат и взятия обратного числа. Возможностью обращения знаменателя в 0 пренебречь.
+
+\item Пусть $\alpha$, $\beta$, $\gamma$ --- три различных корня уравнения $$x^3 - x - 1 = 0.$$ 
+Вычислите:
+$$\frac{1-\alpha}{1+\alpha} + \frac{1-\beta}{1+\beta} + \frac{1-\gamma}{1+\gamma}.$$
+
+\item Найти максимальное значение определителя третьего порядка, у которого 2 элемента равны 4, а остальные 1 или -1.
+
+\item Решите в комплексных числах систему:
+\begin{equation*}
+\begin{cases}
+\sqrt{3} z^{11} - z^{10} - 1 = 0 \\
+|z| = 1
+\end{cases}
+\end{equation*}
+
+\item Вычислите интеграл
+$$\int\limits_{-1}^{1} \frac{dx}{(e^x + 1)(x^2 + 1)} .$$
+
+\item Из точки $P$ к параболе с фокусом $F$ провели две касательные $PX$ и $PY$. Докажите, что:
+$$FP^2 = FX \cdot FY .$$
+
+\item Обозначим $f(x) = a x^2 + b x + c$, $a > 0$. Известно, что уравнение $f(x) = x$ не имеет решений. Докажите, что последовательность $a_n = \min \underbrace{f(f( \cdots f}_{n} (x) { \cdots ))} $ --- возрастающая.
+
+\item Даны натуральные числа $m$, $n$ такие, что $m^2 - 2 n^2 = 1$, и даны функции: 
+\begin{equation*}
+\begin{aligned}
+f_1(x) &= \cos(x),\\
+f_2(x) &= \ctg(x),\\
+f_3(x) &= \arctg(x). 
+\end{aligned}
+\end{equation*}
+Докажите, что существует композиция $H(x)$ из указанных функций (некоторые функции могут быть использованы несколько раз, а некоторые ни разу) такая, что $H(1) = \frac{m}{n}$.
+
+\item Пусть $p_1 = 2$, $p_2 = 3$, $p_3 = 5$, ..., $p_n$ --- возрастающая последовательность всех простых чисел, не превосходящих~$2^{100}$. Докажите, что:
+$$\frac{1}{p_1} + \frac{1}{p_2} + ... + \frac{1}{p_n} < 10 .$$
+
+\end{enumerate}
+
+
+
+\end{document} 

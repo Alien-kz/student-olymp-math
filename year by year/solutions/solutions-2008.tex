@@ -1,0 +1,104 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtext}
+\usepackage{comment}
+\usepackage{graphicx}
+
+\usepackage{tikz}
+\usepackage{geometry}
+\geometry{left=1cm, right=1cm, top=2cm, bottom=2cm}
+\sloppy
+\usepackage{wrapfig}
+\graphicspath{{../../}}
+\usepackage{fancybox,fancyhdr}
+
+\newcommand{\head}[2]
+{
+	\fancyhf{}
+	\pagestyle{fancy}
+	\chead{Казахстанский филиал МГУ имени М.В.Ломоносова}
+
+	\begin{center}
+	\begin{LARGE}
+	#1
+	\end{LARGE}
+	\end{center}
+
+	\begin{center}
+	\begin{large}
+	#2
+	\end{large}
+	\end{center}
+
+	\begin{center}
+	\begin{LARGE}
+	Указания
+	\end{LARGE}
+	\end{center}
+}
+
+\begin{document}
+
+\head{Открытая олимпиада по математике}{7 декабря 2008}
+
+\begin{enumerate}
+\item С помощью интегрирования по частям докажите, что:
+
+$$ \int\limits_0^{2\pi} f(x)\cos x\,dx = 
+ \int\limits_0^{\pi} (f'(x+\pi) - f'(x)) \sin{x}\,dx. $$
+
+\item Ответ: мощность конечна и совпадает с количеством элементов в $A$. Любая такая функция $f$ будет постоянной. Для доказательства этого факта нужно воспользоваться плотностью $\mathbb{Q} \cap [0; 1]$ в $[0; 1]$ и непрерывностью $f$ на $[0; 1]$, рассматривая $$\inf \left\lbrace x: x \in \mathbb{Q} \cap [0; 1] \text{ и } f(x) \neq f(0) \right \rbrace$$
+(в случае, когда это множество не пусто).
+
+\item Обозначим $n$ количество участников. Выберем победителя первого дня (если это $n$-й участник) или предпоследнего победителя первого дня (иначе). Пусть это $k$-й участник, где $k < n$. Значит, в первый день были бои $(k, i)$ для всех $i$ от $k+1$ до $n$. При этом, $(n-k)$-й по счету бой второго дня будет между $k$-м участником и победителем среди $(k+1), \hdots, n$. 
+
+\item Ответ: все многочлены степени не выше $(n+1)$.
+
+Рассмотрим 
+$$g(x) = f(x) - f(0) - \frac{x}{1!}\,f'(0) - \frac{x^2}{2!}\,f''(0) - \hdots\\
+\hdots - \frac{x^n}{n!}\,f^{(n)}(0).$$
+
+$$ \begin{cases}
+g^{(n+1)}(x) = \frac{(n+1)!}{x^{n+1}} g(x)\\
+g^k(0) = 0, 0 \leqslant k \leqslant n.
+\end{cases}$$
+Согласно теореме о единственности решения задачи Коши при $x > 0$ и $x < 0$, функция будет совпадать с некоторым многочленом вида $C x^{n+1}$. А так как функция $g(x)$ $(n+1)$ раз дифференцируема в нуле, то $C$ будет одним и тем же при $x>0$ и $x<0$.
+
+\item От противного. Пусть $f(b) > f(a)$ (обратный случай аналогичен). Ясно, что $f(a) \geqslant 0$ и $f(b) \geqslant 0$, иначе мы можем сузить отрезок $[a; b]$. Существует такое $\varepsilon$, что 
+$$\int_{a+\varepsilon}^{b+\varepsilon} f(t) \,dt > \int_{a}^{b} f(t) \,dt = \alpha.$$ Но тогда можно взять $a + \varepsilon < c < b + \varepsilon$, что
+$$\int_{a + \varepsilon}^{c} = \alpha.$$
+Противоречие.
+
+\item Пусть $\prod\limits_{i \in I} a_i$ имеет ровно $k \leqslant n - 1$ различных простых делителей $p_1$, ..., $p_k$. Каждому $X \in \lbrace 1, 2, ..., n \rbrace$, включая пустое множество, сопоставим набор из нулей и единиц $(\alpha_1, \alpha_2, ..., \alpha_k)(X)$, где $\alpha_s$ --- остаток при делении на 2 показателя $p_s$ в произведении $\prod\limits_{i \in X} a_i$ (для пустого множества $\prod\limits_{i \in X} a_i = 1$). Количество всевозможных наборов из нулей и единиц длины $k$ есть $2^k$, а количество подмножеств $\lbrace 1, 2, ..., n \rbrace$ равно $2^n > 2^k$. По принципу Дирихле найдутся два одинаковых набора $(\alpha_1, \alpha_2, ..., \alpha_k)$ для различных $X_1$ и $X_2$. Тогда положим искомое множество $X = X_1 \Delta X_2$ (симметрическая разность).
+
+\item Используйте теорему Чебышева (постулат Бертрана): для любого $x \ge 2$ найдётся простое число $p$ в интервале $x \leqslant p < 2x$. Проведите индукцией по $k$ с шагом 2.
+
+\item Рассмотрим функцию $f(x) = x^2 D(x) + x$, где
+$$
+D(x) = 
+\begin{cases}
+1, x \in \mathbb{Q} \\
+0, x \not \in \mathbb{Q}.
+\end{cases}
+$$
+--- функция Дирихле.
+
+\item Ответ: не всегда. Рассмотрим функцию:
+$$
+f(x) = 
+\begin{cases}
+1, x = 0\\
+0, x \neq 0.
+\end{cases}
+$$
+Известно, что $g(0) + h(0) = 1$. Так как функция $g$ сюръективная, то существует $x_0$ такой, что $g(x_0) = g(0) - 1$ (ясно, что $x_0 \neq 0$). Отсюда получаем $h(x_0) = 1 - g(0) = h(0)$ --- противоречие с инъективностью $h(x)$.
+
+\end{enumerate}
+
+\end{document}

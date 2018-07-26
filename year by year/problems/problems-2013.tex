@@ -1,0 +1,101 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtext}
+
+\usepackage{comment}
+\usepackage{geometry}
+\geometry{left=1cm, right=1cm, top=2cm, bottom=2cm}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\usepackage{wrapfig}
+\usepackage{fancybox,fancyhdr}
+\sloppy
+
+
+\newcommand{\head}[2]
+{
+	\fancyhf{}
+	\pagestyle{fancy}
+	\chead{Казахстанский филиал МГУ имени М.В.Ломоносова}
+
+	\begin{center}
+	\begin{LARGE}
+	#1
+	\end{LARGE}
+	\end{center}
+
+	\begin{center}
+	\begin{large}
+	#2
+	\end{large}
+	\end{center}
+
+	\textit{
+	\begin{flushright}
+	Время работы:  180 минут\\
+	Каждая задача оценивается в 10 баллов.\\
+	\end{flushright}
+	}
+
+}
+
+
+\renewcommand\thesubsubsection{}
+\renewcommand\thesubsection{}
+\renewcommand\thesection{}
+\usepackage[indentfirst, explicit]{titlesec}
+\titleformat{\section}{\Large\bfseries\center}{}{1em}{#1}
+\titleformat{\subsection}{\Large\bfseries\center}{}{1em}{#1}
+\titleformat{\subsubsection}{\normalsize\bfseries\center}{}{1em}{#1}
+
+\begin{document}
+
+\head{Открытая олимпиада по математике}{20 декабря 2013}
+
+\begin{enumerate}
+\item Можно ли разрезать квадрат 7$\times$7 на 5 частей так, чтобы из них можно было сложить 3 квадрата попарно различных целых площадей?
+
+\item Известно, что $a$, $b$ и $c$ --- корни уравнения $x^3 + px + q = 0$. Вычислите определитель матрицы:
+\begin{equation*}
+\begin{pmatrix}
+a & b & c\\
+c & a & b\\
+b & c & a\\
+\end{pmatrix}.
+\end{equation*}
+
+\item На плоскости дана парабола. Найдите множество точек плоскости, из которых парабола видна под прямым углом (т.е. касательные, проведённые из этой точки, перпендикулярны друг другу).
+
+\item Бинарная операция $*$: $\mathbb{R} \times \mathbb{R} \rightarrow \mathbb{R}$ удовлетворяет соотношению $(a * b) * c = a + b + c$ для любых вещественных чисел $a$, $b$ и $c$. Докажите, что $a * b = a + b$ для любых вещественных $a$ и $b$.
+
+\item Назовем перестановку чисел от $1$ до $N$ <<интересной>>, если никакое число не стоит на своем месте ($a_i \ne i$). Обозначим $S(N)$ количество <<интересных>> перестановок чисел от $1$ до $N$. Вычислите:\\
+a) $S(N)$;\\
+б) $\lim\limits_{N \rightarrow \infty} \frac{S(N)}{N!}$.
+
+\item Определите все вещественные числа $k$, для которых справедливо соотношение:
+$$\int\limits_{1}^{2} \left( 1 + k \ln{x} \right) x^{x^k + k - 1} dx = 15.$$
+
+\item Докажите, что:\\
+a) существует бесконечно много целых чисел, не представимых в виде суммы кубов трёх целых чисел (среди которых могут быть равные);\\
+б) любое целое число представимо в виде суммы кубов пяти целых чисел (среди которых могут быть равные).
+
+\item Пусть $n$ --- натуральное число, кратное 4. Посчитайте количество различных биекций $f: \{1, \hdots, n\} \rightarrow \{1, \hdots, n\}$ таких, что $f(j) + f^{-1}(j) = n + 1$ для всех $j = 1, \hdots, n$. 
+
+Пример: для биекции $f: (1, 2, 3, 4) \rightarrow (2, 4, 1, 3)$ обратной будет $f^{-1}: (1,2,3,4) \rightarrow (3, 1, 4, 2)$.
+
+\item Известно, что $P(x)$ --- многочлен степени $n$ такой, что для всех $t \in \{ 1, 2, 2^2, \hdots, 2^n \}$ верно $P(t) = \frac{1}{t}$. Найдите $P(0)$.
+
+\item В графе $G$ все вершины степени $k$. При этом в $G$ нет треугольников и для любых двух вершин, у которых нет общего ребра, найдутся ровно две вершины, с которыми есть общие рёбра у каждой из этих двух вершин. Чему равно количество вершин $G$?
+
+\end{enumerate}
+
+
+\end{document} 

@@ -1,0 +1,95 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtext}
+
+\usepackage{comment}
+\usepackage{geometry}
+\geometry{left=1cm, right=1cm, top=2cm, bottom=2cm}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\usepackage{wrapfig}
+\usepackage{fancybox,fancyhdr}
+\sloppy
+
+
+\newcommand{\head}[2]
+{
+	\fancyhf{}
+	\pagestyle{fancy}
+	\chead{Казахстанский филиал МГУ имени М.В.Ломоносова}
+
+	\begin{center}
+	\begin{LARGE}
+	#1
+	\end{LARGE}
+	\end{center}
+
+	\begin{center}
+	\begin{large}
+	#2
+	\end{large}
+	\end{center}
+
+	\textit{
+	\begin{flushright}
+	Время работы:  180 минут\\
+	Каждая задача оценивается в 10 баллов.\\
+	\end{flushright}
+	}
+
+}
+
+
+\renewcommand\thesubsubsection{}
+\renewcommand\thesubsection{}
+\renewcommand\thesection{}
+\usepackage[indentfirst, explicit]{titlesec}
+\titleformat{\section}{\Large\bfseries\center}{}{1em}{#1}
+\titleformat{\subsection}{\Large\bfseries\center}{}{1em}{#1}
+\titleformat{\subsubsection}{\normalsize\bfseries\center}{}{1em}{#1}
+
+\begin{document}
+
+\head{Открытая олимпиада по математике}{21 декабря 2012}
+
+\begin{enumerate}
+
+\item Будем называть целочисленную квадратную матрицу порядка $n$ <<весёлой>>, если сумма элементов каждой её строки чётна. Докажите, что для любой целочисленной матрицы $A$ и для любой <<весёлой>> матрицы $B$ произведение $AB$ тоже является <<весёлой>> матрицей.
+
+\item  Пусть ($A$, $+$, $*$) --- конечное кольцо с единицей, в котором $1 + 1 = 0$. Докажите, что уравнения
+$x^2 = 0$ и $x^2 = 1$ имеют одинаковое количество корней в кольце.
+
+\item Прямые $l_1$ и $l_2$ касаются параболы в точках $A$ и $B$, соответственно, и пересекаются в точке $C$. Точка $K$ --- середина отрезка $AB$. Докажите,что середина отрезка $KC$ лежит на параболе.
+
+\item При каких натуральных $n$ выполняется равенство
+$$\sum\limits_{k=1}^n \left[ \sqrt[k]{n}\,\right] = 2 n ?$$
+
+\item Последовательность 1, 3, 4, 9, 10, 12, 13, $\hdots$ состоит из всех натуральных чисел, являющихся степенью 3 или представимых в виде суммы различных степеней 3. Найдите 100-й член этой последовательности.
+
+\item Квадратная матрица $A$ порядка $m$ такова, что $A^{n+1} = 0$, а $A^n$ не равна нулевой. Докажите, что 
+$$a_n A^n + a_{n-1} A^{n-1} + \hdots + a_1 A + a_0 E = 0$$
+тогда, и только тогда, когда вещественные коэффициенты $a_i = 0$ при любом $i = 0, 1, \hdots, n$. Здесь $E$ --- единичная матрица.
+
+\item Вычислите сумму ряда
+$$\sum_{k=1}^{\infty} \frac{1}{1^3 + 2^3 + \hdots + k^3}.$$
+Примечание: соотношение $\zeta(2) = \sum\limits_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$ считать известным.
+
+\item Докажите, что 11 коней не могут побить все оставшиеся 53 поля шахматной доски.
+
+\item Пусть $f: [0, 1] \rightarrow \mathbb{R}$ --- непрерывная функция, для которой $\int\limits_{0}^{1} x f(x)\,dx = 0$. Докажите, что
+$$\int\limits_{0}^{1} f^2(x)\,dx \geqslant 4 \left( \int\limits_{0}^{1} f(x)\,dx \right)^2.$$
+
+
+\end{enumerate}
+
+
+
+\end{document} 
