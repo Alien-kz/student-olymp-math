@@ -1,0 +1,325 @@
+\documentclass[12pt, a5paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2cm,right=1cm,top=2cm,bottom=2cm, twoside]{geometry}
+\usepackage{lscape}
+\usepackage{comment}
+
+
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+
+\binoppenalty=10000
+\relpenalty=10000	
+
+\newcommand{\header}[2]
+{
+	\subsection{{#1}}
+	\begin{center}
+%	\textbf{#1}\\
+	#2
+	\end{center}
+}
+
+\sloppy
+
+%space from foothead
+\headsep=12pt
+\setlength{\headheight}{28pt} 
+
+%header
+\usepackage{fancyhdr}
+\fancypagestyle{mystyle}
+{
+	\fancyhead{}
+	\fancyhead[LE]{\nouppercase\leftmark}		% LE -> Left part on Even pages
+	\fancyhead[RO]{\nouppercase\rightmark}		% RO -> Right part on Odd pages
+}
+
+%center sections name
+\renewcommand\thesection{}
+\renewcommand\thesubsection{}
+\usepackage[explicit]{titlesec}
+\titleformat{\section}{\normalfont\bfseries\center}{}{1em}{#1}
+\titleformat{\subsection}{\normalfont\bfseries\center}{}{1em}{#1}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+\vfill
+
+Московский государственный университет\\
+имени М.В.~Ломоносова\\
+Казахстанский филиал\\
+
+\vfill
+
+{\large\bf 
+Студенческие олимпиады по математике\\
+Казахстанского филиала МГУ.\\
+Задачи и указания. \\
+2008--2018 гг.\\}
+
+\vfill
+
+Астана\\
+2018
+\end{center}
+\end{titlepage}
+
+\setcounter{page}{2}
+
+
+\thispagestyle{empty}
+
+\noindent{\bf УДК} \\
+{\bf ББК}\\
+{\bf Л}
+\vspace{0.7 cm}
+
+
+{\bf ISBN}  
+
+\vspace{0.7 cm}
+
+В настоящем сборнике представлены более 100 задач студенческих олимпиад по математике Казахстанского филиала МГУ имени М.В.Ломоносова за период с 2008 по 2018 год.
+
+Сборник  адресован  всем интересующимся олимпиадным движением.
+
+\vspace{0.5 cm}
+
+{\bf Составители:}
+
+Абдикалыков А.К., Баев А.Ж., Васильев А.Н.
+
+\vspace{0.5 cm}
+
+
+{\bf TeX--верстка:}
+
+Баев А.Ж.
+
+\newpage
+\begin{small}
+\begin{center}
+\textbf{Предисловие}
+\end{center}
+В Казахстанском филиале  МГУ имени М.В.~Ломоносова ежегодно проводятся студенческие олимпиады по математике. На базе Казахстанского филиала проводится также Республиканский этап студенческой предметной олимпиады по математике (2016 и 2017~гг.). Проведение олимпиады в Филиале (уже во второй раз) является результатом побед наших студентов на данной олимпиаде в предыдущие годы.
+
+Ежегодно в декабре студенты Казахстанского филиала проходят отбор внутри университета для участия на Республиканском этапе. В связи со спецификой обучения в Филиале, на олимпиаде участвуют студенты первого и второго курсов механико--математического факультета и факультета вычислительной математики и кибернетики (студенты третьего и четвертого курса продолжают обучение в Москве). На олимпиаде обычно предлагается от 7 до 10 заданий по математическому анализу, алгебре, геометрии, теории чисел, дискретной математике и по крайней мере одна задача из коллекции школьных олимпиад по математике. Такой вариант позволяет первокурсникам свободно конкурировать со студентами второго курса. Победители справляются, как правило, с 4 или 5 заданиями.
+
+В данном сборнике представлены тексты около 100 задач олимпиад последних десяти лет, к которым даны указания, составленные преподавателями Казахстанского филиала. При подготовке олимпиад использованы материалы из различных сборников студенческих и школьных олимпиад, а также авторские задачи. Авторами задач являются преподаватели филиала Абдикалыков А.К., Баев А.Ж., Васильев А.Н., которые активно участвуют в олимпиадном движении Казахстана. 
+
+Составители выражают благодарность профессору  Нурсултанову~Е.Д. и доценту Бекмаганбетову~К.А. за оказание содействия при подготовке сборника.
+
+\begin{flushright}
+Директор Казахстанского филиала
+
+А.В.Сидорович
+\end{flushright}
+\end{small}
+
+\newpage
+
+\mbox{}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\pagestyle{mystyle}
+
+\section{Условия задач олимпиад Казахстанского филиала}
+
+\header{2008--2009}{7 декабря 2008}
+\input{problem/2008}
+\newpage
+
+\header{2009--2010}{6 декабря 2009}
+\input{problem/2009}
+\newpage
+
+\header{2010--2011}{12 декабря 2010}
+\input{problem/2010}
+\newpage
+
+\header{2011--2012}{10 декабря 2011}
+\input{problem/2011}
+\newpage
+
+\header{2012--2013}{21 декабря 2012}
+\input{problem/2012}
+\newpage
+
+\header{2013--2014}{20 декабря 2013}
+\input{problem/2013}
+\newpage
+
+\header{2013--2014 (дополнительный тур)}{15 марта 2014}
+\input{problem/2014-bonus}
+\newpage
+
+\header{2014--2015}{10 декабря 2014}
+\input{problem/2014}
+\newpage
+
+\header{2015--2016}{19 декабря 2015}
+\input{problem/2015}
+\newpage
+
+\header{2016--2017}{10 декабря 2016}
+\input{problem/2016}
+\newpage
+
+\header{2017--2018}{9 декабря 2017}
+\input{problem/2017}
+\newpage
+
+\header{2017--2018 (дополнительный тур)}{13 марта 2018}
+\input{problem/2018-bonus}
+\newpage
+
+\header{Республиканская олимпиада по математике 2016}{01 апреля 2016}
+\input{problem/2016-rep-math}
+\newpage
+
+\header{Республиканская олимпиада по МКМ 2016}{01 апреля 2016}
+\input{problem/2016-rep-mcm}
+\newpage
+
+\header{Республиканская олимпиада по математике 2017}{13 апреля 2017}
+\input{problem/2017-rep-math}
+\newpage
+
+\mbox{}
+
+\newpage
+
+\section{Указания}
+
+\header{2008--2009}{7 декабря 2008}
+\input{solution/2008-sol}
+\newpage
+
+\header{2009--2010}{6 декабря 2009}
+\input{solution/2009-sol}
+\newpage
+
+\header{2010--2011}{12 декабря 2010}
+\input{solution/2010-sol}
+\newpage
+
+\header{2011--2012}{10 декабря 2011}
+\input{solution/2011-sol}
+\newpage
+
+\header{2012--2013}{21 декабря 2012}
+\input{solution/2012-sol}
+\newpage
+
+\header{2013--2014}{20 декабря 2013}
+\input{solution/2013-sol}
+\newpage
+
+\header{2013--2014 (дополнительный тур)}{15 марта 2014}
+\input{solution/2014-bonus-sol}
+\newpage
+
+\header{2014--2015}{10 декабря 2014}
+\input{solution/2014-sol}
+\newpage
+
+\header{2015--2016}{19 декабря 2015}
+\input{solution/2015-sol}
+\newpage
+
+\header{2016--2017}{10 декабря 2016}
+\input{solution/2016-sol}
+\newpage
+
+\header{2017--2018}{9 декабря 2017}
+\input{solution/2017-sol}
+\newpage
+
+\header{2017--2018 (дополнительный тур)}{13 марта 2018}
+\input{solution/2018-bonus-sol}
+\newpage
+%%%%%%%%%%%%%%%%%%%%
+
+\header{Республиканская олимпиада по математике 2016}{01 апреля 2016}
+\input{solution/2016-rep-math-sol}
+\newpage
+
+\header{Республиканская олимпиада по МКМ 2016}{01 апреля 2016}
+\input{solution/2016-rep-mcm-sol}
+\newpage
+
+\header{Республиканская олимпиада по математике 2017}{13 апреля 2017}
+\input{solution/2017-rep-math-sol}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{landscape}
+
+\section{Результаты}
+
+\begin{scriptsize}
+
+
+\header{2012--2013}{21 декабря 2012}
+\input{result/2012-res}
+\newpage
+
+\header{2013--2014}{20 декабря 2013}
+\input{result/2013-res}
+\newpage
+
+\header{2013--2014 (дополнительный тур)}{15 марта 2014}
+\input{result/2014-bonus-res}
+\newpage
+
+\header{2014--2015}{10 декабря 2014}
+\input{result/2014-res}
+\newpage
+
+\header{2015--2016}{19 декабря 2015}
+\input{result/2015-res}
+\newpage
+
+\header{2016--2017}{10 декабря 2016}
+\input{result/2016-res}
+\newpage
+
+\header{2017--2018}{9 декабря 2017}
+\input{result/2017-res}
+\newpage
+
+\header{2017--2018 (дополнительный тур)}{13 марта 2018}
+\input{result/2018-bonus-res}
+\newpage
+%%%%%%%%%%%%%%%%%%%%
+
+\header{Республиканская олимпиада по математике 2016}{01 апреля 2016}
+\input{result/2016-rep-math-res}
+\newpage
+
+\header{Республиканская олимпиада по МКМ 2016}{01 апреля 2016}
+\input{result/2016-rep-mcm-res}
+\newpage
+
+\header{Республиканская олимпиада по математике 2017}{13 апреля 2017}
+\input{result/2017-rep-math-res}
+\newpage
+
+\end{scriptsize}
+\end{landscape}
+
+\end{document}

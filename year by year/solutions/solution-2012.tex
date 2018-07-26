@@ -1,0 +1,160 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtext}
+\usepackage{comment}
+\usepackage{graphicx}
+
+\usepackage{tikz}
+\usepackage{geometry}
+\geometry{left=1cm, right=1cm, top=2cm, bottom=2cm}
+\sloppy
+\usepackage{wrapfig}
+\graphicspath{{../../}}
+\usepackage{fancybox,fancyhdr}
+\newcommand{\informat}[1]
+{
+	\paragraph{Ввод.\\} #1
+}
+
+\newcommand{\outformat}[1]
+{
+	\paragraph{Вывод.\\} #1
+}
+
+\newcommand{\example}[2]
+{
+	\paragraph{Пример.\\}
+	{\tt
+	\begin{tabular}{|p{0.45\linewidth}|p{0.45\linewidth}|}
+	\hline
+	Ввод & Вывод \\
+	\hline
+	#1 & #2		\\
+	\hline
+	\end{tabular}
+	}
+}
+
+\newcommand{\examplee}[4]
+{
+	\paragraph{Пример.\\}
+	{\tt
+	\begin{tabular}{|p{0.45\linewidth}|p{0.45\linewidth}|}
+	\hline
+	Ввод 	& Вывод  	\\
+	\hline
+	#1 		& #2 		\\
+	\hline
+	#3		& #4		\\
+	\hline
+	\end{tabular}
+	}
+}
+
+\newcommand{\exampleee}[6]
+{
+	\paragraph{Пример.\\}
+	{\tt
+	\begin{tabular}{|p{0.45\linewidth}|p{0.45\linewidth}|}
+	\hline
+	Ввод 	& Вывод  	\\
+	\hline
+	#1 		& #2 		\\
+	\hline
+	#3		& #4		\\
+	\hline
+	#5		& #6		\\
+	\hline
+	\end{tabular}
+	}
+}
+
+\newcommand{\exampleeee}[8]
+{
+	\paragraph{Пример.\\}
+	{\tt
+	\begin{tabular}{|p{0.45\linewidth}|p{0.45\linewidth}|}
+	\hline
+	Ввод 	& Вывод  	\\
+	\hline
+	#1 		& #2 		\\
+	\hline
+	#3		& #4		\\
+	\hline
+	#5		& #6		\\
+	\hline
+	#7		& #8		\\
+	\hline
+	\end{tabular}
+	}
+}
+
+\newcommand{\exampleeeee}[5]
+{
+	\paragraph{Пример.\\}
+	{\tt
+	\begin{tabular}{|p{0.45\linewidth}|p{0.45\linewidth}|}
+	\hline
+	Ввод 	& Вывод  	\\
+	\hline
+	#1		\\
+	\hline
+	#2		\\
+	\hline
+	#3		\\
+	\hline
+	#4		\\
+	\hline
+	#5		\\
+	\hline
+	\end{tabular}
+	}
+}
+
+
+\newcommand{\excomm}[1]
+{
+	\paragraph{Комментарий. \\}
+	\textit{#1}
+}
+
+\newcommand{\head}[2]
+{
+	\fancyhf{}
+	\pagestyle{fancy}
+%	\chead{Олимпиада }
+%	\rhead{#2}
+
+	\chead{Казахстанский филиал МГУ имени М.В.Ломоносова}
+
+\begin{center}
+\begin{LARGE}
+#1
+\end{LARGE}
+\end{center}
+
+\begin{center}
+\begin{large}
+#2
+\end{large}
+\end{center}
+
+\begin{center}
+\begin{LARGE}
+Указания
+\end{LARGE}
+\end{center}
+}
+
+\begin{document}
+
+\head{Открытая олимпиада по математике}{21 декабря 2012}
+\input{../../solution/2012-sol}
+
+\end{document}
