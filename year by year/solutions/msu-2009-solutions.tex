@@ -1,0 +1,76 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtext}
+
+\usepackage{comment}
+\usepackage{geometry}
+\geometry{left=1cm, right=1cm, top=2cm, bottom=2cm}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\usepackage{wrapfig}
+\usepackage{fancybox,fancyhdr}
+\sloppy
+
+\setlength{\headheight}{28pt}
+
+\newcommand{\head}[4]
+{
+	\fancyhf{}
+	\pagestyle{fancy}
+	\chead{#3, #4}
+
+	\begin{center}
+	\begin{large}
+	#1 \\
+	\textit{#2} \\
+	\end{large}
+	\end{center}
+
+}
+
+\begin{document}
+
+\head{Открытая студенческая олимпиада по математике \\ Казахстанского филиала МГУ}{6 декабря 2009}{Казахстанский филиал МГУ имени М. В. Ломоносова}{г. Астана}
+
+\begin{enumerate}
+
+\item Пусть $A = -10^6$. Сначала за 4 хода (сложений или удвоений) получаем ($-10A$). Затем за 3 хода (умножений или возведений в квадрат) получаем $A^7$. Наконец, за 4 хода путем умножений (или возведений в квадрат) получаем ($-A^7$). Осталось сделать последнее действие.
+
+\item Ответ: $\frac{72}{11}$. Нужно решить оптимизационную задачу:
+$$\max\lbrace 10\alpha + 8 \beta + 15 \gamma; 9 - (2 \alpha + 3 \beta + 4 \gamma) \rbrace \to \min,$$
+где $\alpha$, $\beta$, $\gamma$ $\in [0; 1]$. Здесь
+$\alpha$, $\beta$, $\gamma$ $\in [0; 1]$ обозначают доли торта, банки варенья и кастрюли молока, которые съедает малыш.
+
+\item Уравнение касательной:
+$$y = -\frac{1}{x_0^2} x + \frac{2}{x_0}.$$
+
+\item Пусть $h(x) = (f(x))^{2001} \cdot (g(x))^{2009}$. Тогда $h'(x) \geqslant 0$ на $[0; 1]$.
+
+\item Ответ: $\frac{\pi}{4}$. Заметим, что:
+$$ \arctg \left( \frac{1}{n^2+n+1} \right) = \arctg \frac{1}{n} - \arctg \frac{1}{n+1}.$$
+
+\item Достаточно использовать неравенство Бернулли:
+$$(1 + x)^\alpha \leqslant 1 + \alpha x$$
+при $x \geqslant 0$ и $0 \leqslant \alpha \leqslant 1$.
+
+\item Ответ: $-\frac{1}{n}$. Заметим, что $(x_1 + x_2 + ... + x_{n+1})^2 \geqslant 0$. Откуда легко получить, что:
+$$ 2 \sum_{1 \leqslant i < j \leqslant n+1} (x_i, x_j) + (n+1) \geqslant 0.$$
+Пусть искомая величина равна $S$.
+$$ 2 \frac{n(n+1)}{2} S \geqslant \sum_{1 \leqslant i < j \leqslant n+1} (x_i, x_j) \geqslant - (n+1).$$
+Откуда и получается $S \geqslant -\frac{1}{n}$.
+
+Докажем методом математической индукции, что существует пример для $s = -\frac{1}{n}$. При $n = 1$ достаточно выбрать вектора $x_1 = (1; 0)$ и $x_2 = (-1; 0)$. Допустим для $n - 1 \geqslant 1$ построены вектора $x_1$, $x_2$, ..., $x_{n}$ такие, что $(x_i, x_j) = - \frac{1}{n-1}$ для всех $i < j$ и $(x_i, x_i) = 1$. 
+
+Умножим все $n$ векторов на $\sqrt{1 - \frac{1}{n^2}}$ и дополним каждый вектор еще одной координатой со значением $-\frac{1}{n}$. Добавим к системе вектор $(0, 0, 0, ..., 0, 1)$. Легко убедиться, что скалярное произведение любых двух различных векторов новой системы равно $-\frac{1}{n}$ и все векторы единичной длины.
+\end{enumerate}
+
+
+\end{document} 

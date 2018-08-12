@@ -1,0 +1,92 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtext}
+
+\usepackage{comment}
+\usepackage{geometry}
+\geometry{left=1cm, right=1cm, top=2cm, bottom=2cm}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\usepackage{wrapfig}
+\usepackage{fancybox,fancyhdr}
+\sloppy
+
+\setlength{\headheight}{28pt}
+
+\newcommand{\head}[4]
+{
+	\fancyhf{}
+	\pagestyle{fancy}
+	\chead{#3, #4}
+
+	\begin{center}
+	\begin{large}
+	#1 \\
+	\textit{#2} \\
+	\end{large}
+	\end{center}
+
+}
+
+\begin{document}
+
+\head{Открытая студенческая олимпиада по математике \\ Казахстанского филиала МГУ}{10 декабря 2011}{Казахстанский филиал МГУ имени М. В. Ломоносова}{г. Астана}
+
+\begin{enumerate}
+\item Ответ: 144. Так как минимальный элемент множества равен мощности множества, то указанное количество равно:
+$$\sum_{k=0}^{5} C_{11-k}^k = 144.$$
+
+\item Ответ: $(2; 1 + \sqrt{2}]$. Пусть $\alpha$ --- один из острых углов треугольника. Тогда:
+$$\frac{h}{r} = \sin{\alpha} + \cos{\alpha} + 1 = \sqrt{2} \sin\left(\alpha + \frac{\pi}{4}\right) + 1.$$
+
+\item (Абдикалыков А.К.) Ответ: $x_{2012}=\frac{1+3^{2012}}{2}$, $y_{2012}=\frac{1-3^{2012}}{2\alpha}.$
+
+Заметим, что из условия следует $x_{n+1}+\alpha y_{n+1}=x_n+\alpha y_n$. Таким образом, $x_n+\alpha y_n=x_0+\alpha y_0=1$ для всех $n$. Исключив $y_n$ из первого рекуррентного соотношения, получим $x_{n+1}=3x_n-1$. Решив полученное с помощью замены $t_n=x_n-\displaystyle\frac{1}{2}$, найдём
+$$
+\begin{cases}
+x_{2012}=\frac{1+3^{2012}}{2}, \\ y_{2012}=\displaystyle\frac{1-x_{2012}}{\alpha}=\frac{1-3^{2012}}{2\alpha}.
+\end{cases}
+$$
+
+\item Ответ: нет. Достаточно рассмотреть подпоследовательность $\left\lbrace x_{60k} \right\rbrace$.
+
+\item Ответ: $\frac{\pi}{2}$. Обозначим искомый интеграл как $I$. Сделаем подстановку $x=\displaystyle\frac{\pi}{2}-t$:
+\begin{multline*}
+I=\int\limits_{0}^{\pi/2}\left(\sin^2\left(\cos^2t\right)+\cos^2\left(\sin^2t\right)\right)\,dx=\\
+=\int\limits_{0}^{\pi/2}\left(1-\cos^2\left(\cos^2t\right)+1-\sin^2\left(\sin^2t\right)\right)\,dx=\pi-I.
+\end{multline*}
+
+\item Ответ: 1. 
+$$\frac{n+2}{n!+(n+1)!+(n+2)!}=$$
+$$=\frac{n+2}{n!(1+n+1+(n+1)(n+2))}=$$
+$$=\frac{1}{n!(n+2)}=\frac{n+1}{(n+2)!}=\frac{1}{(n+1)!}-\frac{1}{(n+2)!}.$$
+
+\item Ответ: $x+C$ и $-x+C$, где $C$ --- постоянная. Заметим, что $|f(1)-f(0)| = 1$ (из условия). Для $t \in (0; 1)$ имеем: 
+$$1 = |f(1) - f(0)| \leqslant |f(1) - f(t)| + |f(t) - f(0)| \leqslant$$
+$$\leqslant (1 - t) + t = 1.$$
+Следовательно, либо $f(t) = t + f(1) - 1$ для всех $t$, либо $f(t) = -t + f(1) + 1$ для всех $t$ (в зависимости от знака $f(1) - f(0)$).
+
+\item (Абдикалыков А.К.) Нетрудно доказать, что уравнение $\mathrm{tg}\,x=x$ имеет ровно один корень на любом из отрезков вида $\left[\pi l - \displaystyle\frac{\pi}{2}, \pi l + \frac{\pi}{2}\right]$, $l\in\mathbb Z$. Таким образом, $x_n\in\left[\pi n - \displaystyle\frac{\pi}{2}, \pi n + \frac{\pi}{2}\right]$ и поэтому при $k\to\infty$
+$$
+|\cos x_{n_k}|=\frac{1}{\sqrt{1+\mathrm{tg}^2\,x_{n_k}}}=\frac{1}{\sqrt{1+x^2_{n_k}}}=$$
+$$=O^*\left(\frac{1}{x_{n_k}}\right)=O^*\left(\frac{1}{n_k}\right),
+$$
+откуда и следует, что два данных ряда сходятся или расходятся одновременно.
+
+\item (Абдикалыков А.К.) Ответ: $(n-2)\cdot 2^{n-1}$. Переставим строки матрицы $A$ так, чтобы все минус единицы стали на главную диагональ; при этом модуль определителя не изменится. Определитель изменённой матрицы находится с помощью элементарных преобразований и равен $(n-2)\cdot(-2)^{n-1}$.
+
+\item Пусть $a_1$, ..., $a_n$ --- все обратимые элементы $S$. Тогда $\left\lbrace a_1, a_2, ..., a_n \right\rbrace = \left\lbrace a_i a_1, a_i a_2, ..., a_i a_n \right\rbrace$ для всех $i \in \lbrace 1, ..., n \rbrace$. Следовательно, $a_i S = S$ для всех $i$ для всех $i \in \lbrace 1, ..., n \rbrace$. Отсюда $S^2 = n S$.
+
+Если $1 \neq -1$, то все обратимые элементы разбиваются на пары противоположных, т.е. $S = 0$. Если $1 = -1$, то $n = 0$ или $1$.
+\end{enumerate}
+
+
+\end{document} 
