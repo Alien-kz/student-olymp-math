@@ -20,11 +20,13 @@ math
 |
 |- year by year (по годам)
 |  |- generate.py (скрипт, генерирующий обертку для каждого года)
-|  |- template.tex (обертка для условий с input)
+|  |- a4.tex (шаблон)
+|  |- msu.txt (список подстановок в шаблон)
 |  |
 |  |- problems 
 |  |  |- problems-2020.tex
 |  |  |- problems-2020.pdf
+|  |  |- problems-2020.png
 |  |  |- ...
 |  |
 |  |- solutions
@@ -56,33 +58,35 @@ math
 	\newpage
 5) year by year/list.txt
 	добавить строку
-	republic-math, 2020, 27 марта 2020, Открытая студенческая олимпиада по математике \\ Казахстанского филиала МГУ, Казахстанский филиала МГУ имени М. В. Ломоносова, г. Астана 
+	2020, 27 марта 2020, Открытая студенческая олимпиада по математике \\ Казахстанского филиала МГУ, Казахстанский филиала МГУ имени М. В. Ломоносова, г. Астана 
 
 ============================
 
 Выполнить:
 1) pdflatex math.tex
-2) cd /year\ by\ year
-3) python3 generate.py < list.txt
+2) cd yby
+3) python3 generate.py png msu.txt a4.tex  ../problems/ problems/ msu- -problems
+4) python3 generate.py pdf msu.txt a4.tex  ../solutions/ solutions/ msu- -solutions
+5) python3 generate.py pdf msu.txt a4.tex  ../results/ results/ msu- -results
 
 ============================
 
 Добавить на сайт
 1) mymath.info/math/msu/problems/msu-2020-problems.tex
-2) mymath.info/math/msu/problems/msu-2020-problems.pdf
-3) mymath.info/math/msu/results/msu-2020-results.tex
-4) mymath.info/math/msu/results/msu-2020-results.pdf
-5) mymath.info/math/msu/solutions/msu-2020-solutions.tex
-6) mymath.info/math/msu/solutions/msu-2020-solutions.pdf
-7) mymath.info/script/run.php
-math/msu/results/msu-2020-results
-8) исправить mymath.info/math/show.php
-if ($olymp == "msu")
-for ($y = 2014; $y <= 2020; $y++)
-============================
+   mymath.info/math/msu/problems/msu-2020-problems.pdf
+   mymath.info/math/msu/problems/msu-2020-problems.png
 
-Выполнить:
-1) cd math
-2) pdflatex math.tex
-3) cd /year\ by\ year
-4) python3 generate.py < list.txt
+2) mymath.info/math/msu/solutions/msu-2020-solutions.tex
+   mymath.info/math/msu/solutions/msu-2020-solutions.pdf
+
+3) mymath.info/math/msu/results/msu-2020-results.tex
+   mymath.info/math/msu/results/msu-2020-results.pdf
+
+4) mymath.info/script/run.php
+   math/msu/results/msu-2020-results
+
+5) исправить mymath.info/math/show.php
+if ($olymp == "msu")
+    for ($y = 2014; $y <= 2020; $y++)
+
+============================
