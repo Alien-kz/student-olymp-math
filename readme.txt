@@ -41,11 +41,24 @@ math
 
 ============================
 
-Как добавлять новую олимпиаду:
+Добавить олимпиаду:
+
 1) problems/2020.tex - условия
 2) solutions/2020.tex - решения
 3) results/2020.tex - результаты
-4) math.tex
+4) yby/2020.txt
+	file, date, name, hoster, city
+	2020, 27 марта 2020, Открытая студенческая олимпиада по математике \\ Казахстанского филиала МГУ, Казахстанский филиала МГУ имени М. В. Ломоносова, г. Астана 
+5) cd yby
+6) python3 generate.py png 2020.txt a4.tex problems
+7) python3 generate.py pdf 2020.txt a4.tex solutions
+8) python3 generate.py pdf 2020.txt a4.tex results
+
+============================
+
+Добавить в книгу:
+
+1) math.tex
    добавить строки
 	\header{2020--2021}{20 декабря 2020}
 	\input{problems/2020}
@@ -56,37 +69,21 @@ math
 	\header{2020--2021}{20 декабря 2020}
 	\input{results/2020}
 	\newpage
-5) year by year/list.txt
-	добавить строку
-	2020, 27 марта 2020, Открытая студенческая олимпиада по математике \\ Казахстанского филиала МГУ, Казахстанский филиала МГУ имени М. В. Ломоносова, г. Астана 
-
-============================
-
-Выполнить:
-1) pdflatex math.tex
-2) cd yby
-3) python3 generate.py png msu.txt a4.tex  ../problems/ problems/ msu- -problems
-4) python3 generate.py pdf msu.txt a4.tex  ../solutions/ solutions/ msu- -solutions
-5) python3 generate.py pdf msu.txt a4.tex  ../results/ results/ msu- -results
+2) pdflatex math.tex
 
 ============================
 
 Добавить на сайт
-1) mymath.info/math/msu/problems/msu-2020-problems.tex
-   mymath.info/math/msu/problems/msu-2020-problems.pdf
-   mymath.info/math/msu/problems/msu-2020-problems.png
 
-2) mymath.info/math/msu/solutions/msu-2020-solutions.tex
-   mymath.info/math/msu/solutions/msu-2020-solutions.pdf
-
-3) mymath.info/math/msu/results/msu-2020-results.tex
-   mymath.info/math/msu/results/msu-2020-results.pdf
-
-4) mymath.info/script/run.php
+0) cd yby
+1) python3 generate.py png 2020.txt a5.tex  ../problems/ ~/http/mymath.info/math/msu/problems/ msu- -problems
+   python3 generate.py pdf 2020.txt a4.tex  ../problems/ ~/http/mymath.info/math/msu/problems/ msu- -problems
+2) python3 generate.py pdf 2020.txt a4.tex  ../solutions/ ~/http/mymath.info/math/msu/solutions/ msu- -solutions
+3) python3 generate.py pdf 2020.txt a4.tex  ../results/ ~/http/mymath.info/math/msu/results/ msu- -results
+4) на странице mymath.info/script/run.php сгенерировать результаты
    math/msu/results/msu-2020-results
-
 5) исправить mymath.info/math/show.php
-if ($olymp == "msu")
-    for ($y = 2014; $y <= 2020; $y++)
+	if ($olymp == "msu")
+		for ($y = 2014; $y <= 2020; $y++)
 
 ============================

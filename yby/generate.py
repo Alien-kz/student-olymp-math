@@ -1,6 +1,7 @@
 #! /bin/python3
 
 # python3 generate.py pdf list.txt template.tex input_directory output_directory [additional_prefix] [additional_suffix]
+# python3 generate.py pdf list.txt template.tex problems
 
 import os
 import sys
@@ -99,11 +100,17 @@ def make_png(output_directory, output_file_names):
 		print(pdf_file + "  ==>>  " + png_file + "\t" + str(png_status ))
 	os.chdir("..")
 
-if (len(sys.argv) < 6 or len(sys.argv) > 8):
-	print("execute example:")
+correct = [5, 6, 7, 8]
+if (len(sys.argv) not in correct):
+	print("execute example 1:")
 	print("    python3 generate.py pdf    list.txt       template.tex  ../problems/  problems/  msu-        -problems")
 	print("                        ^      ^              ^             ^             ^          ^           ^")
 	print("                        level  template_info  template_file input_dir     output_dir add_prefix  add_suffix")
+	print("")
+	print("execute example 2:")
+	print("    python3 generate.py pdf    list.txt       template.tex  problems")
+	print("                        ^      ^              ^             ^")
+	print("                        level  template_info  template_file key")
 	print("")
 	print("level:")
 	print("    tex pdf png")
@@ -116,12 +123,22 @@ else:
 	level = sys.argv[1]
 	data_file = sys.argv[2]
 	template_file = sys.argv[3]
-	input_directory = sys.argv[4]
-	output_directory = sys.argv[5]
+	input_directory = ""
+	output_directory = ""
 	output_prefix = ""
+	output_suffix = ""
+	
+	if len(sys.argv) == 5:
+		input_directory = "../" + sys.argv[4] + "/"
+		output_directory = sys.argv[4] + "/"
+		output_prefix = "msu-"
+		output_suffix = "-" + sys.argv[4]
+	else:
+		input_directory = sys.argv[4]
+		output_directory = sys.argv[5]
+	
 	if len(sys.argv) > 6:
 		output_prefix = sys.argv[6]
-	output_suffix = ""
 	if len(sys.argv) > 7:
 		output_suffix = sys.argv[7]
 	print('template info:' + '\t\t' + data_file)
