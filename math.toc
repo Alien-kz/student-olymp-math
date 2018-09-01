@@ -1,0 +1,45 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}\IeC {\CYRU }\IeC {\cyrs }\IeC {\cyrl }\IeC {\cyro }\IeC {\cyrv }\IeC {\cyri }\IeC {\cyrya } \IeC {\cyrz }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrch } \IeC {\cyro }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyra }\IeC {\cyrd } \IeC {\CYRK }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyra }\IeC {\cyrh }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyrs }\IeC {\cyrk }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyro } \IeC {\cyrf }\IeC {\cyri }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyra }}{7}
+\contentsline {subsection}{\numberline {1.1}{2008--2009}}{7}
+\contentsline {subsection}{\numberline {1.2}{2009--2010}}{9}
+\contentsline {subsection}{\numberline {1.3}{2010--2011}}{11}
+\contentsline {subsection}{\numberline {1.4}{2011--2012}}{13}
+\contentsline {subsection}{\numberline {1.5}{2012--2013}}{15}
+\contentsline {subsection}{\numberline {1.6}{2013--2014}}{17}
+\contentsline {subsection}{\numberline {1.7}{2013--2014 (\IeC {\cyrd }\IeC {\cyro }\IeC {\cyrp }\IeC {\cyro }\IeC {\cyrl }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrt }\IeC {\cyru }\IeC {\cyrr })}}{19}
+\contentsline {subsection}{\numberline {1.8}{2014--2015}}{21}
+\contentsline {subsection}{\numberline {1.9}{2015--2016}}{23}
+\contentsline {subsection}{\numberline {1.10}{2016--2017}}{25}
+\contentsline {subsection}{\numberline {1.11}{2017--2018}}{27}
+\contentsline {subsection}{\numberline {1.12}{2017--2018 (\IeC {\cyrd }\IeC {\cyro }\IeC {\cyrp }\IeC {\cyro }\IeC {\cyrl }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrt }\IeC {\cyru }\IeC {\cyrr })}}{29}
+\contentsline {subsection}{\numberline {1.13}{\IeC {\CYRR }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrp }\IeC {\cyru }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyrs }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrya } \IeC {\cyro }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra } \IeC {\cyrp }\IeC {\cyro } \IeC {\cyrm }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyre } 2016}}{30}
+\contentsline {subsection}{\numberline {1.14}{\IeC {\CYRR }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrp }\IeC {\cyru }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyrs }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrya } \IeC {\cyro }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra } \IeC {\cyrp }\IeC {\cyro } \IeC {\CYRM }\IeC {\CYRK }\IeC {\CYRM } 2016}}{32}
+\contentsline {subsection}{\numberline {1.15}{\IeC {\CYRR }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrp }\IeC {\cyru }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyrs }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrya } \IeC {\cyro }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra } \IeC {\cyrp }\IeC {\cyro } \IeC {\cyrm }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyre } 2017}}{36}
+\contentsline {section}{\numberline {2}\IeC {\CYRU }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrya }}{39}
+\contentsline {subsection}{\numberline {2.1}{2008--2009}}{39}
+\contentsline {subsection}{\numberline {2.2}{2009--2010}}{42}
+\contentsline {subsection}{\numberline {2.3}{2010--2011}}{44}
+\contentsline {subsection}{\numberline {2.4}{2011--2012}}{47}
+\contentsline {subsection}{\numberline {2.5}{2012--2013}}{50}
+\contentsline {subsection}{\numberline {2.6}{2013--2014}}{53}
+\contentsline {subsection}{\numberline {2.7}{2013--2014 (\IeC {\cyrd }\IeC {\cyro }\IeC {\cyrp }\IeC {\cyro }\IeC {\cyrl }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrt }\IeC {\cyru }\IeC {\cyrr })}}{57}
+\contentsline {subsection}{\numberline {2.8}{2014--2015}}{61}
+\contentsline {subsection}{\numberline {2.9}{2015--2016}}{67}
+\contentsline {subsection}{\numberline {2.10}{2016--2017}}{70}
+\contentsline {subsection}{\numberline {2.11}{2017--2018}}{73}
+\contentsline {subsection}{\numberline {2.12}{2017--2018 (\IeC {\cyrd }\IeC {\cyro }\IeC {\cyrp }\IeC {\cyro }\IeC {\cyrl }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrt }\IeC {\cyru }\IeC {\cyrr })}}{75}
+\contentsline {subsection}{\numberline {2.13}{\IeC {\CYRR }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrp }\IeC {\cyru }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyrs }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrya } \IeC {\cyro }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra } \IeC {\cyrp }\IeC {\cyro } \IeC {\cyrm }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyre } 2016}}{77}
+\contentsline {subsection}{\numberline {2.14}{\IeC {\CYRR }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrp }\IeC {\cyru }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyrs }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrya } \IeC {\cyro }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra } \IeC {\cyrp }\IeC {\cyro } \IeC {\CYRM }\IeC {\CYRK }\IeC {\CYRM } 2016}}{84}
+\contentsline {subsection}{\numberline {2.15}{\IeC {\CYRR }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrp }\IeC {\cyru }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyrs }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrya } \IeC {\cyro }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra } \IeC {\cyrp }\IeC {\cyro } \IeC {\cyrm }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyre } 2017}}{91}
+\contentsline {section}{\numberline {3}\IeC {\CYRR }\IeC {\cyre }\IeC {\cyrz }\IeC {\cyru }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyrery }}{97}
+\contentsline {subsection}{\numberline {3.1}{2012--2013}}{97}
+\contentsline {subsection}{\numberline {3.2}{2013--2014}}{98}
+\contentsline {subsection}{\numberline {3.3}{2013--2014 (\IeC {\cyrd }\IeC {\cyro }\IeC {\cyrp }\IeC {\cyro }\IeC {\cyrl }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrt }\IeC {\cyru }\IeC {\cyrr })}}{99}
+\contentsline {subsection}{\numberline {3.4}{2014--2015}}{100}
+\contentsline {subsection}{\numberline {3.5}{2015--2016}}{101}
+\contentsline {subsection}{\numberline {3.6}{2016--2017}}{102}
+\contentsline {subsection}{\numberline {3.7}{2017--2018}}{103}
+\contentsline {subsection}{\numberline {3.8}{2017--2018 (\IeC {\cyrd }\IeC {\cyro }\IeC {\cyrp }\IeC {\cyro }\IeC {\cyrl }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrt }\IeC {\cyru }\IeC {\cyrr })}}{104}
+\contentsline {subsection}{\numberline {3.9}{\IeC {\CYRR }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrp }\IeC {\cyru }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyrs }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrya } \IeC {\cyro }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra } \IeC {\cyrp }\IeC {\cyro } \IeC {\cyrm }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyre } 2016}}{105}
+\contentsline {subsection}{\numberline {3.10}{\IeC {\CYRR }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrp }\IeC {\cyru }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyrs }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrya } \IeC {\cyro }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra } \IeC {\cyrp }\IeC {\cyro } \IeC {\CYRM }\IeC {\CYRK }\IeC {\CYRM } 2016}}{106}
+\contentsline {subsection}{\numberline {3.11}{\IeC {\CYRR }\IeC {\cyre }\IeC {\cyrs }\IeC {\cyrp }\IeC {\cyru }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyrs }\IeC {\cyrk }\IeC {\cyra }\IeC {\cyrya } \IeC {\cyro }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyrp }\IeC {\cyri }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra } \IeC {\cyrp }\IeC {\cyro } \IeC {\cyrm }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrm }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyri }\IeC {\cyrk }\IeC {\cyre } 2017}}{107}

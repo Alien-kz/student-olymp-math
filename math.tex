@@ -33,20 +33,21 @@
 \setlength{\headheight}{28pt} 
 
 %header
-\usepackage{fancyhdr}
-\fancypagestyle{mystyle}
-{
-	\fancyhead{}
-	\fancyhead[LE]{\nouppercase\leftmark}		% LE -> Left part on Even pages
-	\fancyhead[RO]{\nouppercase\rightmark}		% RO -> Right part on Odd pages
-}
+
 
 %center sections name
-\renewcommand\thesection{}
-\renewcommand\thesubsection{}
 \usepackage[explicit]{titlesec}
 \titleformat{\section}{\normalfont\bfseries\center}{}{1em}{#1}
 \titleformat{\subsection}{\normalfont\bfseries\center}{}{1em}{#1}
+
+
+\renewpagestyle{headings}{
+\sethead[\subsectiontitle][][]
+{}{}{\sectiontitle}
+\headrule
+\setfoot[\thepage][][]
+{}{}{\thepage}
+}
 
 \begin{document}
 
@@ -130,12 +131,11 @@
 \mbox{}
 
 \newpage
+\pagestyle{headings}
 
 \tableofcontents
 
 \newpage
-
-\pagestyle{mystyle}
 
 \section{Условия задач олимпиад Казахстанского филиала}
 
