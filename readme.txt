@@ -50,9 +50,9 @@ math
 	file, date, name, hoster, city
 	2020, 27 марта 2020, Открытая студенческая олимпиада по математике \\ Казахстанского филиала МГУ, Казахстанский филиала МГУ имени М. В. Ломоносова, г. Астана 
 5) cd yby
-6) python3 generate.py png 2020.txt a4.tex problems
-7) python3 generate.py pdf 2020.txt a4.tex solutions
-8) python3 generate.py pdf 2020.txt a4.tex results
+6) python3 generate.py png 2020.txt olymp-a4.tex problems
+7) python3 generate.py pdf 2020.txt olymp-a4.tex solutions
+8) python3 generate.py pdf 2020.txt olymp-a4.tex results
 
 ============================
 
@@ -76,10 +76,10 @@ math
 Добавить на сайт
 
 0) cd yby
-1) python3 generate.py png 2020.txt a5.tex  ../problems/ ~/http/mymath.info/math/msu/problems/ msu- -problems
-   python3 generate.py pdf 2020.txt a4.tex  ../problems/ ~/http/mymath.info/math/msu/problems/ msu- -problems
-2) python3 generate.py pdf 2020.txt a4.tex  ../solutions/ ~/http/mymath.info/math/msu/solutions/ msu- -solutions
-3) python3 generate.py pdf 2020.txt a4.tex  ../results/ ~/http/mymath.info/math/msu/results/ msu- -results
+1) python3 generate.py png 2020.txt olymp-a5.tex  ../problems/ ~/http/mymath.info/math/msu/problems/ msu- -problems
+   python3 generate.py pdf 2020.txt olymp-a4.tex  ../problems/ ~/http/mymath.info/math/msu/problems/ msu- -problems
+2) python3 generate.py pdf 2020.txt olymp-a4.tex  ../solutions/ ~/http/mymath.info/math/msu/solutions/ msu- -solutions
+3) python3 generate.py pdf 2020.txt olymp-a4.tex  ../results/ ~/http/mymath.info/math/msu/results/ msu- -results
 4) на странице mymath.info/script/run.php сгенерировать результаты
    math/msu/results/msu-2020-results
 5) исправить mymath.info/math/show.php
